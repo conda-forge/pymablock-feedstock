@@ -12,7 +12,7 @@ source:
 build:
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   noarch: python
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -30,6 +30,10 @@ requirements:
     - kwant >=1.4  # [not win]
     - __win      # [win]
     - __unix     # [not win]
+
+noarch_platforms:
+  - linux_64
+  - win_64
 
 test:
   imports:
