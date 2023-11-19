@@ -31,10 +31,6 @@ requirements:
     - __win      # [win]
     - __unix     # [not win]
 
-noarch_platforms:
-  - linux_64
-  - win_64
-
 test:
   imports:
     - pymablock
