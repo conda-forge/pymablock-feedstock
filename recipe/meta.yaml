@@ -25,11 +25,8 @@ requirements:
     - numpy >=1.23
     - scipy >=1.8
     - sympy >=1.10
+    - python-mumps >=0.0.1,<0.1
     - packaging >=22.0
-    # Optional dependencies
-    - kwant >=1.4  # [not win]
-    - __win      # [win]
-    - __unix     # [not win]
 
 test:
   imports:
