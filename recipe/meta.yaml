@@ -1,5 +1,5 @@
 {% set name = "pymablock" %}
-{% set version = "1.0.0.post0" %}
+{% set version = "2.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 880da5a73b5c7b8e275ac1ace8835a8e632c9632fbcca400b859c6e4ccc11f20
+  sha256: b2145698a2342d344b9172c467efcee49643b6be826baeaf89e305a473b1c8b4
 
 build:
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   noarch: python
-  number: 1
+  number: 0
 
 requirements:
   host:
