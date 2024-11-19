@@ -30,6 +30,8 @@ requirements:
     - packaging >=22.0
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - pymablock
 
