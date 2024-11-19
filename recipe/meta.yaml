@@ -1,5 +1,5 @@
 {% set name = "pymablock" %}
-{% set version = "2.0.0" %}
+{% set version = "2.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: b2145698a2342d344b9172c467efcee49643b6be826baeaf89e305a473b1c8b4
+  sha256: 5befc09fe984c3a235da11f2d051fefcde987cf1ef425c30451cd3f8476954d8
 
 build:
   script: {{ PYTHON }} -m pip install . --no-deps -vv
@@ -16,15 +16,15 @@ build:
 
 requirements:
   host:
-    - python >=3.9
+    - python >=3.11
     - pip
     - hatchling
     - hatch-vcs
   run:
-    - python >=3.9
-    - numpy >=1.23
-    - scipy >=1.8
-    - sympy >=1.10
+    - python >=3.11
+    - numpy >=1.24
+    - scipy >=1.10
+    - sympy >=1.12
     - python-mumps >=0.0.1,<0.1
     - packaging >=22.0
 
