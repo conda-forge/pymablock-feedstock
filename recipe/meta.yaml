@@ -1,5 +1,6 @@
 {% set name = "pymablock" %}
 {% set version = "2.1.0" %}
+{% set python_min = "3.11" %}
 
 package:
   name: {{ name|lower }}
@@ -16,12 +17,12 @@ build:
 
 requirements:
   host:
-    - python >=3.11
+    - python {{ python_min }}
     - pip
     - hatchling
     - hatch-vcs
   run:
-    - python >=3.11
+    - python >={{ python_min }}
     - numpy >=1.24
     - scipy >=1.10
     - sympy >=1.12
