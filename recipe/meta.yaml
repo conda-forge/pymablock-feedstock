@@ -1,5 +1,5 @@
 {% set name = "pymablock" %}
-{% set version = "2.1.0" %}
+{% set version = "2.2.0" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 5befc09fe984c3a235da11f2d051fefcde987cf1ef425c30451cd3f8476954d8
+  sha256: a35804c6c9f53ddf47849fef189ffafc0e0639d9261154fe9a8d56afcd3320f0
 
 build:
   script: {{ PYTHON }} -m pip install . --no-deps -vv
