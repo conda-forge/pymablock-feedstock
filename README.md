@@ -17,7 +17,6 @@ Pymablock is a Python package for quasi-degenerate perturbation theory
 calculations. It handles symbolic, dense and sparse calculations, and
 implements arbitrary order multivariate perturbations.
 
-
 Current build status
 ====================
 
