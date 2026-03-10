@@ -29,6 +29,7 @@ requirements:
     - numpy >=2.0
     - scipy >=1.13
     - sympy >=1.13
+    - python-mumps >=0.0.1,<0.1
     - packaging >=22.0
 
 tests:
