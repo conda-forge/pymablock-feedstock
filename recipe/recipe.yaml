@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: pymablock
-  version: 2.2.1
+  version: "2.2.1"
   python_min: "3.12"
 
 package:
@@ -11,10 +11,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: a35804c6c9f53ddf47849fef189ffafc0e0639d9261154fe9a8d56afcd3320f0
+  sha256: 3c78c8021db23adea657ccd69dc7e52cd8643f077885ad0c265fe37a49288dd5
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . --no-deps -vv
 
@@ -29,6 +29,7 @@ requirements:
     - numpy >=2.0
     - scipy >=1.13
     - sympy >=1.13
+    - python-mumps >=0.0.1,<0.1
     - packaging >=22.0
 
 tests:
