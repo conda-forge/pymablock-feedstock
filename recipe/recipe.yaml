@@ -3,7 +3,7 @@ schema_version: 1
 context:
   name: pymablock
   version: "2.2.1"
-  python_min: 3.11
+  python_min: "3.11"
 
 package:
   name: ${{ name|lower }}
